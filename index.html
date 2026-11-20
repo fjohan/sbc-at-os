@@ -65,6 +65,14 @@ button:disabled{opacity:.5;cursor:default}
  h1{font-size:42pt}h2{font-size:30pt}
  .grid,.ambitions{grid-template-columns:1fr 1fr}
 }
+
+.provenance-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.4rem 0}
+.provenance-grid figure{margin:0;background:var(--panel);border:1px solid var(--line);padding:.85rem}
+.provenance-grid img{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:white}
+.provenance-grid figcaption{margin-top:.55rem}
+.provenance-level{display:block;color:var(--accent);font-weight:bold;margin-bottom:.25rem}
+.provenance-grid a{color:inherit}
+@media screen and (max-width:700px){.provenance-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -90,7 +98,27 @@ button:disabled{opacity:.5;cursor:default}
 </section>
 
 <section class="slide" id="slide-2" aria-labelledby="title-2">
-  <h2 id="title-2">The difficult case of human language data</h2>
+  <h2 id="title-2">Why am I here?</h2>
+  <div class="provenance-grid">
+    <figure>
+      <img src="provenance-local.jpeg" alt="" width="1175" height="565">
+      <figcaption><span class="provenance-level">Local</span><strong><a href="https://humlab.lu.se">Lund University Humanities Lab</a></strong><br>A local home for language data and research expertise.</figcaption>
+    </figure>
+    <figure>
+      <img src="provenance-national.jpeg" alt="" width="1339" height="875">
+      <figcaption><span class="provenance-level">National</span><strong><a href="https://sprakbanken.se">Språkbanken CLARIN</a></strong><br>A Swedish network for language research infrastructure.</figcaption>
+    </figure>
+    <figure>
+      <img src="provenance-european.jpeg" alt="" width="1449" height="855">
+      <figcaption><span class="provenance-level">European</span><strong><a href="https://clarin.eu">CLARIN ERIC</a></strong><br>A European infrastructure for discovering and reusing language resources.</figcaption>
+    </figure>
+  </div>
+  <p>From Lund, through Språkbanken CLARIN, we work on a shared Open Science question: how can researchers discover, access and reuse language data responsibly?</p>
+  <details class="notes"><summary>Speaker notes</summary><p>I’m speaking from the Lund University Humanities Lab, a node in the Swedish Språkbanken CLARIN consortium. Through CLARIN ERIC, the national infrastructure belongs to a wider European network. Those three levels shape how we make language data available for research.</p></details>
+</section>
+
+<section class="slide" id="slide-3" aria-labelledby="title-3">
+  <h2 id="title-3">The difficult case of human language data</h2>
   <div class="grid">
     <div>
       <p>Speech, gesture and sign-language recordings can contain:</p>
@@ -108,8 +136,8 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </section>
 
-<section class="slide" id="slide-3" aria-labelledby="title-3">
-  <h2 id="title-3">Open Science goes beyond downloads</h2>
+<section class="slide" id="slide-4" aria-labelledby="title-4">
+  <h2 id="title-4">Open Science goes beyond downloads</h2>
   <div class="grid">
     <blockquote>As open as possible, as closed as necessary.</blockquote>
     <div class="panel">
@@ -120,8 +148,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>The objective is maximum legitimate scientific reuse. Public distribution is one way to support it.</p></details>
 </section>
 
-<section class="slide" id="slide-4" aria-labelledby="title-4">
-  <h2 id="title-4">Språkbanken CLARIN as trusted infrastructure</h2>
+<section class="slide" id="slide-5" aria-labelledby="title-5">
+  <h2 id="title-5">Språkbanken CLARIN as trusted infrastructure</h2>
   <div class="grid">
     <ol class="flow" aria-label="From collections to research">
       <li>Participants and collections</li>
@@ -142,9 +170,9 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </section>
 
-<section class="slide" id="slide-5" aria-labelledby="title-5">
+<section class="slide" id="slide-6" aria-labelledby="title-6">
   <p class="kicker">Lund University Humanities Lab Archive</p>
-  <h2 id="title-5">Find the resource openly. Request access when needed.</h2>
+  <h2 id="title-6">Find the resource openly. Request access when needed.</h2>
   <div class="grid">
     <div>
       <p>The Humanities Lab, a node in Språkbanken CLARIN, provides secure, long-term storage for structured language data.</p>
@@ -159,8 +187,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>The archive provides CMDI metadata to the VLO and serves as a CLARIN Metadata Providing Centre (C-centre). Deposits receive persistent identifiers in the form of handles. The archive shows how a national node can support local collections and European discovery through CLARIN ERIC. KBLab illustrates a complementary route to reuse through computation.</p></details>
 </section>
 
-<section class="slide" id="slide-6" aria-labelledby="title-6">
-  <h2 id="title-6">A Swedish example from KBLab</h2>
+<section class="slide" id="slide-7" aria-labelledby="title-7">
+  <h2 id="title-7">A Swedish example from KBLab</h2>
   <div class="grid">
     <div>
       <p>Språkbanken CLARIN aims to help memory institutions make cultural heritage collections findable, sustainably accessible and usable for research and AI. KBLab offers a complementary example from the National Library, where copyright and other restrictions limit distribution of some holdings.</p>
@@ -176,8 +204,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>What can we responsibly make open from the dataset?</p></details>
 </section>
 
-<section class="slide" id="slide-7" aria-labelledby="title-7">
-  <h2 id="title-7">Why Swedish data matter for Swedish models</h2>
+<section class="slide" id="slide-8" aria-labelledby="title-8">
+  <h2 id="title-8">Why Swedish data matter for Swedish models</h2>
   <p>Does Swedish pretraining improve performance on the same fine-tuning task?</p>
   <!-- Replace the two result lines and add the task and metric once available. -->
   <div class="grid results">
@@ -196,8 +224,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>Use the experiment to discuss how pretraining data affect downstream performance on this specific task. Connect it to Språkbanken CLARIN’s goal of combining high-quality data with transparent, reproducible, findable and citable Swedish language models, including specialized research models. Maintaining national capacity to develop and sustain these models supports Swedish language model sovereignty.</p></details>
 </section>
 
-<section class="slide" id="slide-8" aria-labelledby="title-8">
-  <h2 id="title-8">From open data to open capabilities</h2>
+<section class="slide" id="slide-9" aria-labelledby="title-9">
+  <h2 id="title-9">From open data to open capabilities</h2>
   <div class="grid">
     <ol class="steps">
       <li><strong>Open the data</strong> <span>when possible</span></li>
@@ -214,8 +242,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>If we cannot make the recording open, what is the next-most-open scientifically useful object?</p></details>
 </section>
 
-<section class="slide" id="slide-9" aria-labelledby="title-9">
-  <h2 id="title-9">Access to speech and sign-language resources</h2>
+<section class="slide" id="slide-10" aria-labelledby="title-10">
+  <h2 id="title-10">Access to speech and sign-language resources</h2>
   <div class="grid">
     <table>
       <thead><tr><th scope="col">Resource</th><th scope="col">Possible access</th></tr></thead>
@@ -238,8 +266,8 @@ button:disabled{opacity:.5;cursor:default}
   </div>
 </section>
 
-<section class="slide" id="slide-10" aria-labelledby="title-10">
-  <h2 id="title-10">What could Språkbanken CLARIN provide?</h2>
+<section class="slide" id="slide-11" aria-labelledby="title-11">
+  <h2 id="title-11">What could Språkbanken CLARIN provide?</h2>
   <ol class="ambitions">
     <li><strong>Common access levels</strong><br>For personal and otherwise restricted language resources.</li>
     <li><strong>Reusable consent and data-use frameworks</strong><br>Covering language technology and machine learning.</li>
@@ -250,8 +278,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>Lund already shows how open discovery and case-by-case access can work together. What would it take to support more collections this way and extend the approach to trusted processing and publication of derived resources?</p></details>
 </section>
 
-<section class="slide" id="slide-11" aria-labelledby="title-11">
-  <h2 id="title-11">Open Science goes beyond open files</h2>
+<section class="slide" id="slide-12" aria-labelledby="title-12">
+  <h2 id="title-12">Open Science goes beyond open files</h2>
   <blockquote>Make language resources as scientifically accessible and reusable as possible while protecting the rights of the people represented in them.</blockquote>
   <ul>
     <li>Open data when possible.</li>
