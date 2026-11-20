@@ -129,7 +129,7 @@ button:disabled{opacity:.5;cursor:default}
       <li>Researchers, language technology and new knowledge</li>
     </ol>
     <div>
-      <p>Shared infrastructure can help projects manage consent, GDPR, licensing, preservation and access.</p>
+      <p>A national network of nodes helps researchers at Swedish universities and institutes contribute language data and find local expertise. Shared infrastructure supports consent, licensing, preservation and access.</p>
       <ul>
         <li>Persistent metadata and documentation</li>
         <li>Authentication and authorization</li>
@@ -143,10 +143,27 @@ button:disabled{opacity:.5;cursor:default}
 </section>
 
 <section class="slide" id="slide-5" aria-labelledby="title-5">
-  <h2 id="title-5">A Swedish example from KBLab</h2>
+  <p class="kicker">Lund University Humanities Lab Archive</p>
+  <h2 id="title-5">Find the resource openly. Request access when needed.</h2>
   <div class="grid">
     <div>
-      <p>Copyright and other restrictions limit distribution of some National Library collections.</p>
+      <p>The Humanities Lab, a node in Språkbanken CLARIN, provides secure, long-term storage for structured language data.</p>
+      <p>Public metadata make collections discoverable across Europe through CLARIN’s Virtual Language Observatory (VLO).</p>
+    </div>
+    <ol class="flow" aria-label="Finding, accessing and citing archived data">
+      <li><strong>Discover</strong> · Browse and search public metadata.</li>
+      <li><strong>Request</strong> · Apply for access to restricted data. Requests are assessed case by case.</li>
+      <li><strong>Cite</strong> · Use the persistent identifier assigned to each deposited resource.</li>
+    </ol>
+  </div>
+  <details class="notes"><summary>Speaker notes</summary><p>The archive provides CMDI metadata to the VLO and serves as a CLARIN Metadata Providing Centre (C-centre). Deposits receive persistent identifiers in the form of handles. The archive shows how a national node can support local collections and European discovery through CLARIN ERIC. KBLab illustrates a complementary route to reuse through computation.</p></details>
+</section>
+
+<section class="slide" id="slide-6" aria-labelledby="title-6">
+  <h2 id="title-6">A Swedish example from KBLab</h2>
+  <div class="grid">
+    <div>
+      <p>Språkbanken CLARIN aims to help memory institutions make cultural heritage collections findable, sustainably accessible and usable for research and AI. KBLab offers a complementary example from the National Library, where copyright and other restrictions limit distribution of some holdings.</p>
       <p>KBLab shows how computation on these collections can produce Swedish language models, speech technology and derived resources for wider research use.</p>
     </div>
     <ol class="flow" aria-label="How restricted collections support reuse">
@@ -159,8 +176,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>What can we responsibly make open from the dataset?</p></details>
 </section>
 
-<section class="slide" id="slide-6" aria-labelledby="title-6">
-  <h2 id="title-6">Why Swedish data matter for Swedish models</h2>
+<section class="slide" id="slide-7" aria-labelledby="title-7">
+  <h2 id="title-7">Why Swedish data matter for Swedish models</h2>
   <p>Does Swedish pretraining improve performance on the same fine-tuning task?</p>
   <!-- Replace the two result lines and add the task and metric once available. -->
   <div class="grid results">
@@ -176,11 +193,11 @@ button:disabled{opacity:.5;cursor:default}
     </div>
   </div>
   <p>A model trained on otherwise inaccessible Swedish material may itself become a reusable scientific resource.</p>
-  <details class="notes"><summary>Speaker notes</summary><p>Use the experiment to discuss how pretraining data affect downstream performance on this specific task.</p></details>
+  <details class="notes"><summary>Speaker notes</summary><p>Use the experiment to discuss how pretraining data affect downstream performance on this specific task. Connect it to Språkbanken CLARIN’s goal of combining high-quality data with transparent, reproducible, findable and citable Swedish language models, including specialized research models. Maintaining national capacity to develop and sustain these models supports Swedish language model sovereignty.</p></details>
 </section>
 
-<section class="slide" id="slide-7" aria-labelledby="title-7">
-  <h2 id="title-7">From open data to open capabilities</h2>
+<section class="slide" id="slide-8" aria-labelledby="title-8">
+  <h2 id="title-8">From open data to open capabilities</h2>
   <div class="grid">
     <ol class="steps">
       <li><strong>Open the data</strong> <span>when possible</span></li>
@@ -197,8 +214,8 @@ button:disabled{opacity:.5;cursor:default}
   <details class="notes"><summary>Speaker notes</summary><p>If we cannot make the recording open, what is the next-most-open scientifically useful object?</p></details>
 </section>
 
-<section class="slide" id="slide-8" aria-labelledby="title-8">
-  <h2 id="title-8">Access to speech and sign-language resources</h2>
+<section class="slide" id="slide-9" aria-labelledby="title-9">
+  <h2 id="title-9">Access to speech and sign-language resources</h2>
   <div class="grid">
     <table>
       <thead><tr><th scope="col">Resource</th><th scope="col">Possible access</th></tr></thead>
@@ -216,12 +233,13 @@ button:disabled{opacity:.5;cursor:default}
     <div>
       <blockquote>Models trained on restricted data can still reveal personal information.</blockquote>
       <p>Assess privacy and disclosure risks in model outputs, particularly for voices, faces, speaker embeddings and generative models.</p>
+      <p>Giving sign language a central place in the infrastructure means preserving the visual features researchers need to study.</p>
     </div>
   </div>
 </section>
 
-<section class="slide" id="slide-9" aria-labelledby="title-9">
-  <h2 id="title-9">What could Språkbanken CLARIN provide?</h2>
+<section class="slide" id="slide-10" aria-labelledby="title-10">
+  <h2 id="title-10">What could Språkbanken CLARIN provide?</h2>
   <ol class="ambitions">
     <li><strong>Common access levels</strong><br>For personal and otherwise restricted language resources.</li>
     <li><strong>Reusable consent and data-use frameworks</strong><br>Covering language technology and machine learning.</li>
@@ -229,10 +247,11 @@ button:disabled{opacity:.5;cursor:default}
     <li><strong>A framework for publishing derived artefacts</strong><br>Assess disclosure risks in models, statistics, annotations and services.</li>
   </ol>
   <p>These ambitions build on CLARIN’s work with FAIR resources, metadata and authentication and extend it to AI and multimodal language technology.</p>
+  <details class="notes"><summary>Speaker notes</summary><p>Lund already shows how open discovery and case-by-case access can work together. What would it take to support more collections this way and extend the approach to trusted processing and publication of derived resources?</p></details>
 </section>
 
-<section class="slide" id="slide-10" aria-labelledby="title-10">
-  <h2 id="title-10">Open Science goes beyond open files</h2>
+<section class="slide" id="slide-11" aria-labelledby="title-11">
+  <h2 id="title-11">Open Science goes beyond open files</h2>
   <blockquote>Make language resources as scientifically accessible and reusable as possible while protecting the rights of the people represented in them.</blockquote>
   <ul>
     <li>Open data when possible.</li>
