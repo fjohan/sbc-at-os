@@ -142,6 +142,36 @@ The archive provides CMDI metadata to the VLO and serves as a CLARIN Metadata Pr
 
 ---
 
+## From a Lund archive deposit to European discovery
+
+Lund University Humanities Lab Archive
+
+### 1. Deposit
+
+![Screenshot of Humanities Lab Archive](archive-chain-deposit.jpeg)
+
+**Humanities Lab Archive** · The archive preserves the deposit and assigns a persistent identifier (a handle) so researchers can cite it.
+
+### 2. Describe
+
+![Screenshot of CMDI metadata](archive-chain-cmdi.jpeg)
+
+**CMDI metadata** · A structured, public metadata record describes the resource and carries its persistent identifier.
+
+### 3. Discover
+
+![Screenshot of CLARIN’s Virtual Language Observatory](archive-chain-vlo.jpeg)
+
+**CLARIN’s Virtual Language Observatory** · The VLO harvests the metadata so researchers can find the resource in a European catalogue.
+
+Researchers can find and cite the resource through its public record. Access to restricted files is handled case by case by the archive.
+
+**Speaker notes**
+
+Follow the deposit from the local archive record, through its CMDI description, to the entry in the VLO. The handle supports citation over time. CLARIN harvests the metadata while the archived files stay under the archive’s access conditions.
+
+---
+
 ## A Swedish example from KBLab
 
     
